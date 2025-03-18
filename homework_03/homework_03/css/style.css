@@ -1,0 +1,82 @@
+/* Скидання стилів */
+@import url('reset.css');
+
+* {
+  color: rgb(212, 90, 90);
+}
+
+/* div.section p {
+  color: olive;
+} */
+
+a[href$="y"]{
+  color:brown;
+}
+
+a[href^="#ci"]{
+  color:chartreuse;
+}
+
+a[href*="tu"]{
+  color:fuchsia
+}
+
+#top {
+  color: darkgray;
+}
+
+h1,
+h2 {
+  color: blue;
+}
+
+.intro.history-intro{
+  color:black;
+}
+
+a {
+  color: red;
+}
+
+span{
+  color:chartreuse
+}
+
+span.city{
+  color:darkslategray
+}
+
+.title {
+  color: green;
+}
+
+.intro {
+  color: orange;
+}
+
+.highlight {
+  color: pink;
+}
+
+.back {
+  color: violet;
+}
+
+[href] {
+  color: aqua;
+}
+[id^='c'] {
+  color: gold;
+}
+
+nav > ul > li {
+  color: darkgreen;
+}
+
+h2 + p {
+  color: darkred;
+}
+
+p.highlight ~ a.back {
+  color: blueviolet;
+}
