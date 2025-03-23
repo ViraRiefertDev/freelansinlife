@@ -1,0 +1,161 @@
+/* Скидання стилів */
+@import url('fonts.css');
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:regular,700&display=swap');
+/* Тут проблема у цьому шрифті, якщо вибирати 700italic, то не працює жирність, тому я скачала просто 700, а oblique як простий наклон букв зробила бо він працює швидше за italic*/
+/* @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:regular,700italic&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500&display=swap");
+
+body {
+  text-align: center;
+  font-size: 40px;
+}
+
+header,
+footer {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+nav {
+  text-align: left;
+}
+
+nav li {
+  color: #a67c52;
+  font-size: 35px;
+  line-height: 1.5;
+  font-family: 'Lobster', sans-serif;
+}
+nav li + li {
+  color: #8e561e;
+  font-size: 30px;
+}
+
+h1 {
+  font-family: 'MagicSchoolTwo', serif;
+  color: #800080;
+  font-size: 100px;
+}
+
+h2 {
+  font-family: 'PastryChef', sans-serif;
+  font-size: 60px;
+  line-height: 2;
+  letter-spacing: 20px;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.hero-title {
+  font-family: 'Lobster', sans-serif;
+  line-height: 2;
+  word-spacing: 10px;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #800080;
+  text-shadow: 10px -5px 10px #800080;
+}
+
+
+
+p > [class$='-house'] {
+  font-family: 'MagicSchoolTwo', serif;
+  font-size: 45px;
+  letter-spacing: 10px;
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
+  text-underline-offset: 30px;
+  text-transform: uppercase;
+}
+
+.pixelori-house {
+  color: #740001;
+  text-shadow: 5px 5px 5px #d3a625;
+}
+
+.flexusnyky-house {
+  color: #c5af23;
+  text-shadow: 10px 5px 10px #60605C;
+}
+
+.bagadary-house {
+  color:  #1b358b;
+  text-shadow: 10px 5px 10px #946b2d;
+}
+
+.skrryptazavry-house {
+  color: #1a472a;
+  text-shadow: 10px 5px 10px #aaaaaa;
+}
+
+[class$='-section'] p {
+  font-family: "GazetaTitul",serif;
+  font-style: italic;
+  
+  line-height: 1.5;
+  font-size: 30px;
+
+}
+
+.houses-section p{
+  font-family: "LagunaC",serif;
+  font-weight: 700;
+}
+
+.characters p {
+  text-align: right;
+}
+
+.characters p + p {
+  text-align: left;
+  font-weight: 700;
+}
+
+.charms-section p {
+  font-family: 'MasonChronicles', serif;
+  font-style: italic;
+  text-align: left;
+}
+
+span.charm-name {
+  font-family: 'MagicSchoolTwo', serif;
+  font-weight: 200;
+  font-size: 40px;
+  color: #800080;
+  text-shadow: 10px -5px 10px #800080;
+  text-transform: capitalize;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.books-section h3 {
+  font-family: 'Lobster', sans-serif;
+  color: #2a5d39;
+  text-shadow: 10px -5px 10px rgba(10, 45, 11, 0.518);
+}
+
+
+.task2-section h3, .task2-section p{
+  font-family: "Poppins",sans-serif;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.task2-section h3{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #1a1a1a;
+  
+}
+
+.task2-section p{
+  font-size: 18px;
+  color: #808080;
+}
+
+
