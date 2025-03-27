@@ -141,10 +141,16 @@ h2{
 
 /* --------- Chessboard----------------- */
 .chess-info{
-  margin-bottom:30px
+  margin-bottom:30px;
+  text-align: center;
 }
 .chess-info > p{
+  max-width: 800px;
+  display: inline-block;
+  white-space: nowrap;
   text-align: center;
+  overflow: auto;
+
   font-size: 30px;
 }
 .chessboard-container{
