@@ -1,0 +1,273 @@
+/* Скидання стилів */
+@import url('fonts.css');
+@import url('reset.css');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+
+
+.line-separator,h1,[class$='-section']>h2, footer{
+  font-size: 50px;
+  text-align: center;
+  color:#663200;
+  font-weight: 900;
+}
+
+[class$='-section']>h2{
+  margin-bottom:10px;
+}
+
+h2{
+  font-size: 40px;
+}
+
+.wrapper{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+[class$="-section"]{
+  margin-bottom:20px;
+}
+
+/*------------- Figma Task -----------------*/
+.figma-task-section{
+  font-family: "CircularStd",sans-serif;
+  font-size: 14px;
+}
+
+
+
+.task-wrapper{
+  background-color:#231F8B;
+  padding:112px 0;
+}
+
+.container{
+  max-width: 1090px;
+  margin: 0 auto;
+}
+
+.main-content {
+  margin-bottom: 70px;
+}
+.main-content *{
+  margin-bottom:10px;
+}
+
+.main-content > .title{
+  font-family: "Montserrat",sans-serif;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+  color: #5A54F2;
+  
+}
+
+.main-content>h2{
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+}
+
+.main-content > .text{
+  max-width: 765px;
+  font-weight: 450;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+.cards-block {
+  font-size: 0;
+}
+.card-item-container{
+  margin-right:30px;
+  display: inline-block;
+  padding:0px 4px;
+  max-width: 238px;
+  vertical-align: top;
+}
+
+.card-item-container.lowered {
+  padding-top:48px;
+}
+
+.cards-item {
+  padding:35px 40px;
+  width: 100%;
+  max-width: 230px;
+  background-color: #fff;
+}
+
+.cards-item.blau{
+  color:white;
+  background-color: #5A54F2;;
+}
+
+
+.icon-container{
+  /* фіксований розмір можна використовувати для малих елементів які не потребують адаптиву, 
+  це можуть бути якісь іконки чи маленькі зображення */
+  /* я подумала що тут цей варіант */
+  width: 72px;
+  margin-bottom: 20px;
+}
+.cards-item > .title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: #252B42;
+}
+
+.cards-item.blau > .title{
+  color:white;
+}
+
+
+
+.cards-item > .line-container{
+  margin-bottom: 20px;
+}
+.cards-item > .description {
+  font-family: "Montserrat",sans-serif;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+}
+
+
+
+
+
+/* --------- Chessboard----------------- */
+.chess-info{
+  margin-bottom:30px
+}
+.chess-info > p{
+  text-align: center;
+  font-size: 30px;
+}
+.chessboard-container{
+  font-size:0px;
+  margin: 0 auto;
+  width: 900px;
+}
+
+.square-container {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  
+}
+
+.square-content {
+  text-align: center;
+  line-height: 100px;
+  font-size: 90px;
+  font-weight: bold;
+  }
+
+  .square-content.black{
+    text-shadow: 
+    -1px -1px 60px #663200,
+    1px -1px 60px #663200,
+    -1px 1px 60px #663200,
+    1px 1px 60px #663200,
+
+    -5px -5px 60px #663200,
+    5px -5px 60px #663200,
+    -5px 5px 60px #663200,
+    5px 5px 60px #663200,
+
+    -10px -10px 60px #663200,
+    10px -10px 60px #663200,
+    -10px 10px 60px #663200,
+    10px 10px 60px #663200,
+
+    -20px -20px 60px #663200,
+    20px -20px 60px #663200,
+    -20px 20px 60px #663200,
+    20px 20px 60px #663200,
+
+    -80px -80px 60px #663200,
+    80px -80px 60px #663200,
+    -80px 80px 60px #663200,
+    80px 80px 60px #663200,
+
+    -40px -40px 200px #663200,
+    40px -40px 200px #663200,
+    -40px 40px 200px #663200,
+    40px 40px 200px #663200;
+  }
+
+  .square-content.white{
+    text-shadow: 
+    -1px -1px 60px #fecfa3,
+    1px -1px 60px #fecfa3,
+    -1px 1px 60px #fecfa3,
+    1px 1px 60px #fecfa3,
+
+    -5px -5px 60px #fecfa3,
+    5px -5px 60px #fecfa3,
+    -5px 5px 60px #fecfa3,
+    5px 5px 60px #fecfa3,
+
+    -10px -10px 60px #fecfa3,
+    10px -10px 60px #fecfa3,
+    -10px 10px 60px #fecfa3,
+    10px 10px 60px #fecfa3,
+
+    -20px -20px 60px #fecfa3,
+    20px -20px 60px #fecfa3,
+    -20px 20px 60px #fecfa3,
+    20px 20px 60px #fecfa3,
+
+    -80px -80px 60px #fecfa3,
+    80px -80px 60px #fecfa3,
+    -80px 80px 60px #fecfa3,
+    80px 80px 60px #fecfa3,
+
+    -40px -40px 200px #fecfa3,
+    40px -40px 200px #fecfa3,
+    -40px 40px 200px #fecfa3,
+    40px 40px 200px #fecfa3;
+  }
+
+  .chessfigure-white{
+    color: white;
+  }
+
+  .chessfigure-invisible.black{
+    color:rgb(102, 50, 0, 0);
+  }
+  .chessfigure-invisible.white{
+    color:rgb(254, 207, 163,1);
+  }
+
+  .files{
+    width: 50px;
+    
+  }
+  .files>.square-content{
+    font-size: 30px;
+  }
+
+  .runks{
+    height: 50px;
+    width: 50px;
+    color:rgba(255, 208, 163,0);
+  }
+
+  .runks+.runks{
+    color:black;
+    width: 100px;
+  }
+  
+.runks>.square-content{
+    line-height: 50px;
+    font-size: 30px;
+  }
+
+  

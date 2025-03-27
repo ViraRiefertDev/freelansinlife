@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster:regular&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>05.Властивості блоків</title>
+  </head>
+  <body>
+    <header>
+      <h1>Вивчаємо властивості блоків</h1>
+    </header>
+
+    <main>
+      <div class="wrapper">
+
+        <div class="figma-task-section">
+          <p class="line-separator">
+            -------------------------------------------------------------------------------</p>
+          <h2>Figma Task</h2>
+          <div class="task-wrapper">
+            <div class="container">
+              <div class="main-content">
+                <p class="title">Our Advantages</p>
+                <h2>Explore the Modern Connected Risk Platform
+                </h2>
+                <p class="text">Built to provide the efficiency, connectedness,
+                  and visibility you need to stay ahead of today’s dynamic risk
+                  environment.</p>
+              </div>
+              <div class="cards-block">
+                <div class="card-item-container">
+                  <div class="cards-item">
+                    <div class="icon-container">
+                      <img src="img/icon1.svg"
+                        alt="A purple building featuring a prominent clock on its facade, showcasing a unique architectural design.">
+                    </div>
+                    <h2 class="title">Risk Management</h2>
+                    <div class="line-container"><img src="img/red-line.svg" alt="red line"></div>
+                    <p class="description">The gradual accumulation of
+                      information
+                      about </p>
+                  </div>
+                </div>
+                <div class="card-item-container lowered">
+                  <div class="cards-item">
+                    <div class="icon-container">
+                      <img src="img/icon2.svg"
+                        alt="A green book with an open cover displaying a brain illustration inside, symbolizing knowledge and intelligence.">
+                    </div>
+                    <h2 class="title">Compliance Management</h2>
+                    <div class="line-container">
+                      <img src="img/red-line.svg" alt="red line">
+                    </div>
+                    <p class="description">The gradual accumulation of
+                      information about</p>
+                  </div>
+                </div>
+                <div class="card-item-container">
+                  <div class="cards-item blau">
+                    <div class="icon-container">
+                      <img src="img/icon3.svg"
+                        alt=" Icon of a graduation cap resting on a stack of books, symbolizing education and academic achievement.">
+                    </div>
+                    <h2 class="title">SOX Management</h2>
+                    <div class="line-container">
+                      <img src="img/red-line.svg" alt="red line">
+                    </div>
+                    <p class="description">The gradual information about atomic
+                      behaviour...</p>
+                  </div>
+                </div>
+                <div class="card-item-container lowered">
+                  <div class="cards-item">
+                    <div class="icon-container">
+                      <img src="img/icon4.svg"
+                        alt="A person stands confidently in front of a group, engaging them with a presentation or speech.">
+                    </div>
+                    <h2 class="title">Internal Audit Streamlined</h2>
+                    <div class="line-container">
+                      <img src="img/red-line.svg" alt="red line">
+                    </div>
+                    <p class="description">The gradual accumulation of
+                      information about </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chessboard-section">
+          <p class="line-separator">
+            -------------------------------------------------------------------------------</p>
+            <h2>Chessboard</h2>
+          <div class="chess-info">
+            <p>Не було використано жодного background-color, та opacity (бо ми ще такого не вчили, тому викручувалась як могла)</p>
+          </div>
+          <div class="chessboard-container">
+            <!-- black figures -->
+            <div class="rank-container">
+              <div class="square-container files">
+                <span class="square-content white">8</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white">♜</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black">♞</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white">♝</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black">♚</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white">♛</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black">♝</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white">♞</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black">♜</span>
+              </div>
+            </div>
+            <div class="rank-container">
+              <div class="square-container  files">
+                <span class="square-content white">7</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black">♟</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white">♟</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black">♟</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white">♟</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black">♟</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white">♟</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black">♟</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white">♟</span>
+              </div>
+            </div>
+            <!-- empty squares -->
+            <div class="rank-container">
+              <div class="square-container files">
+                <span class="square-content white">6</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+            </div>
+            <div class="rank-container">
+              <div class="square-container files">
+                <span class="square-content white">5</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+            </div>
+            <div class="rank-container">
+              <div class="square-container files">
+                <span class="square-content white">4</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+            </div>
+            <div class="rank-container">
+              <div class="square-container  files">
+                <span class="square-content white">3</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content black chessfigure-invisible">♘</span>
+              </div>
+              <div class="square-container">
+                <span
+                  class="square-content white chessfigure-invisible">♘</span>
+              </div>
+            </div>
+            <!-- white figures -->
+            <div class="rank-container">
+              <div class="square-container files">
+                <span class="square-content white">2</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white chessfigure-white">♙</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black chessfigure-white">♙</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white chessfigure-white">♙</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black chessfigure-white">♙</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white chessfigure-white">♙</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black chessfigure-white">♙</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white chessfigure-white">♙</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black chessfigure-white">♙</span>
+              </div>
+            </div>
+            <div class="rank-container">
+              <div class="square-container files">
+                <span class="square-content white">1</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black chessfigure-white">♖</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white chessfigure-white">♘</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black chessfigure-white">♗</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white chessfigure-white">♛</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black chessfigure-white">♔</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white chessfigure-white">♗</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content black chessfigure-white">♘</span>
+              </div>
+              <div class="square-container">
+                <span class="square-content white chessfigure-white">♖</span>
+              </div>
+            </div>
+            <div class="rank-container">
+              <div class="square-container runks">
+                <span class="square-content white">d</span>
+              </div>
+              <div class="square-container runks">
+                <span class="square-content white">a</span>
+              </div>
+              <div class="square-container runks">
+                <span class="square-content white">b</span>
+              </div>
+              <div class="square-container runks">
+                <span class="square-content white">c</span>
+              </div>
+              <div class="square-container runks">
+                <span class="square-content white">d</span>
+              </div>
+              <div class="square-container runks">
+                <span class="square-content white">e</span>
+              </div>
+              <div class="square-container runks">
+                <span class="square-content white">f</span>
+              </div>
+              <div class="square-container runks">
+                <span class="square-content white">g</span>
+              </div>
+              <div class="square-container runks">
+                <span class="square-content white">h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        -------------------------------------------------------------------------------
+      </p>
+      <p>
+        Тут має бути футер
+      </p>
+    </footer>
+  </body>
+</html>
