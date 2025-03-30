@@ -71,7 +71,7 @@ body {
 
 .section-hydra {
   padding: 100px 0;
-  background-color: #302C42;
+  background: url('../img/vector-1.svg') 168px 109px / 1449px  no-repeat,url('../img/vector-2.svg') 168px 109px / 1449px  no-repeat,  #302C42;
   color:#fff;
   font-family: 'Montserrat', sans-serif;
 }
@@ -152,7 +152,7 @@ body {
   padding: 39px 26px 28.5px 39px;
   font-size: 0px;
   border-radius: 90px;
-  background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+  background: radial-gradient(50.13% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
   box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
 }
 
