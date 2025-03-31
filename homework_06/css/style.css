@@ -69,7 +69,7 @@ body {
 
 .section-hydra {
   padding: 100px 0;
-  background: url('../img/vector-1.svg') 173px 113px / 1449px  no-repeat,url('../img/vector-2.svg') 138px 413px / 1449px  no-repeat,  #302C42;
+  background: #302C42;
   color:#fff;
   font-family: 'Montserrat', sans-serif;
 }
@@ -79,6 +79,7 @@ body {
 }
 
 .aboutus-content{
+  background: url('../img/lines.svg') -22px 18px / 1449px  no-repeat;
   margin: 0 -59px 108px;
   max-width: 1390px;
   font-size: 0;
