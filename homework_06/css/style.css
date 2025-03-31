@@ -115,9 +115,7 @@ body {
   font-size: 36px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.95);
-  /* посчитала по формуле line-height=(font-size+desired-spacing) / font-size чтоб добиться расстояния в 5px как в макете
-*/
-  line-height: 1.3125;
+  line-height: 1.305;
   margin-bottom: 42px;
 }
 
@@ -129,7 +127,7 @@ body {
 .about-text > p{
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.44;
   word-spacing: 1px;
   margin-bottom: 28px;
 }
@@ -140,6 +138,7 @@ body {
   padding: 17px 47px 16px 39px;
   text-transform: uppercase;
   font-size: 12px;
+  line-height: 1.25;
   font-weight: 700;
   color: #343045;
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
@@ -190,9 +189,11 @@ body {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 24px;
+  line-height: 	1.208;
 }
 
 .contact-item  .text-content p{
   font-size: 14px;
+  line-height: 1.43;
 }
 
