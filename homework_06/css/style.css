@@ -53,18 +53,15 @@ body {
 .description-block > *{
   padding-bottom: 20px;
 }
-.description-block > .last-element{
+.description-block .last-element{
   padding-bottom: 0px;
 }
 
-.list > li {
+.description-block > ul > li {
   padding:0 0 14px 28px;
   background: url("../img/check.svg") 0 0 / 20px no-repeat;
 }
 
-.list > .last-element{
-  padding-bottom: 0px;
-}
 
 
 
