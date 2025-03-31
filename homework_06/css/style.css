@@ -57,14 +57,15 @@ body {
   padding-bottom: 0px;
 }
 
-.list > .item {
-  padding-bottom: 14px;
-}
-
-.item {
-  padding-left: 28px;
+.list > li {
+  padding:0 0 14px 28px;
   background: url("../img/check.svg") 0 0 / 20px no-repeat;
 }
+
+.list > .last-element{
+  padding-bottom: 0px;
+}
+
 
 
 /* -------Task 02--------------- */
