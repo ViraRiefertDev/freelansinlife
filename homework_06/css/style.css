@@ -51,14 +51,15 @@ body {
   color: #808080;
 }
 .description-block > *{
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .description-block .last-element{
   padding-bottom: 0px;
 }
 
 .description-block > ul > li {
-  padding:0 0 14px 28px;
+  margin-bottom: 14px;
+  padding-left:28px;
   background: url("../img/check.svg") 0 0 / 20px no-repeat;
 }
 
@@ -156,7 +157,7 @@ body {
 
 .contacts-list > li{
   display: inline-block;
-  padding:24px 0 27.5px 0;
+  padding:24px 20px 27.5px 0;
   
 }
 
