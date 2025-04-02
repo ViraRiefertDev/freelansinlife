@@ -191,7 +191,7 @@ body {
   line-height: 	1.208;
 }
 
-.contact-item  .text-content p{
+.contact-item  .text-content a, .contact-item  .text-content p{
   font-size: 14px;
   line-height: 1.43;
 }
