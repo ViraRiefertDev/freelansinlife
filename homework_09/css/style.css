@@ -1,0 +1,43 @@
+/* Скидання стилів */
+@import url('fonts.css');
+@import url('reset.css');
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shantell+Sans:regular,800,600italic&display=swap");
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+.header,.footer{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  padding-left:15px;
+  padding-right: 15px;
+  max-width: 1230px;
+}
+
+
+.item-guarantee__img-container{
+  max-width: 72px;
+}
+
+[class*="-button__img-container"]{
+  max-width: 40px;
+}
+
+[class*="__star-container"]{
+  max-width: 17px;
+}
+
+

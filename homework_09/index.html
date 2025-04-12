@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster:regular&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee+Tint:regular&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Underdog:regular&display=swap"
+      rel="stylesheet">
+    <title>09.BEM</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <h1 class="header__title">BEM</h1>
+          <p>
+            -------------------------------------------------------------------------------
+          </p>
+        </div>
+      </header>
+
+      <main class="page">
+        <!-- section-guarantees -->
+        <div class="section-guarantees">
+          <div class="section-guarantees__container">
+            <div class="section-guarantees__items">
+              <div class="section-guarantees__item item-guarantee">
+                <div class="item-guarantee__img-container">
+                  <img class="item-guarantee__picture"
+                    src="img/guarantee-icon1-x3.avif" alt="some Image">
+                </div>
+                <h2 class="item-guarantee__title">Free Shipping</h2>
+                <p class="item-guarantee__description">Free shipping with
+                  discount</p>
+              </div>
+              <div class="section-guarantees__item item-guarantee">
+                <div class="item-guarantee__img-container">
+                  <img class="item-guarantee__picture"
+                    src="img/guarantee-icon2-x3.avif" alt="some Image">
+                </div>
+                <h2 class="item-guarantee__title">Great Support 24/7</h2>
+                <p class="item-guarantee__description">Instant access to
+                  Contact</p>
+              </div>
+              <div class="section-guarantees__item item-guarantee">
+                <div class="item-guarantee__img-container">
+                  <img class="item-guarantee__picture"
+                    src="img/guarantee-icon3-x3.avif" alt="some Image">
+                </div>
+                <h2 class="item-guarantee__title">100% Sucure Payment</h2>
+                <p class="item-guarantee__description">We ensure your money is
+                  save</p>
+              </div>
+              <div class="section-guarantees__item item-guarantee">
+                <div class="item-guarantee__img-container">
+                  <img class="item-guarantee__picture"
+                    src="img/guarantee-icon4-x3.avif" alt="some Image">
+                </div>
+                <h2 class="item-guarantee__title">Money-Back Guarantee</h2>
+                <p class="item-guarantee__description">30 days money-back</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- section -->
+        <div class="section-featured">
+          <div class="section-featured__container">
+            <!-- section header -->
+            <div class="section-featured__header header-section">
+              <h2 class="header-section__title heading-03">Featured
+                Products</h2>
+              <div class="header-section__view-all view-all">
+                <a class="view-all__link">View All</a>
+                <!-- стрілочка буде псевдоелементом або background -->
+              </div>
+            </div>
+            <div class="section-featured__cards product-promo-list">
+              <div
+                class="product-promo-list__item product-card product-card--4x">
+                <div class="product-card__sale sale-block">
+                  <p class="sale-block__body">Sale 50%</p>
+                </div>
+                <div class="product-card__image-container">
+                  <img class="product-card__img" src="img/product-1.avif"
+                    alt="product picture">
+                </div>
+                <h3 class="product-card__name">Green Capsicum</h3>
+                <p class="product-card__price price">$14.99</p>
+                <p class="product-card__price price price--old">$20.99</p>
+                <div class="product-card__rating">
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star "
+                      src="img/star-icon-gray.webp" alt="Star">
+                  </div>
+                </div>
+                <div class="product-card__bag">
+                  <a class="bag-button" href="#">
+                    <div class="bag-button__img-container">
+                      <img class="bag-button__icon" src="img/bag-icon.webp"
+                        alt="white bag in green circle">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product-promo-list__item product-card product-card--4x">
+                <div class="product-card__image-container">
+                  <img class="product-card__img" src="img/product-2.avif"
+                    alt="product picture">
+                </div>
+                <h3 class="product-card__name">Green Capsicum</h3>
+                <p class="product-card__price price">$14.99</p>
+                <div class="product-card__rating">
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star "
+                      src="img/star-icon-gray.webp" alt="Star">
+                  </div>
+                </div>
+                <div class="product-card__bag">
+                  <a class="bag-button" href="#">
+                    <div class="bag-button__img-container">
+                      <img class="bag-button__icon" src="img/bag-icon.webp"
+                        alt="white bag in green circle">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product-promo-list__item product-card product-card--4x">
+                <div class="product-card__add-to-favorites">
+                  <a class="favorite-button" href="#">
+                    <div class="favorite-button__img-container">
+                      <img class="favorite-button__icon"
+                        src="img/like-icon.avif" alt="black heart">
+                    </div>
+                  </a>
+                </div>
+                <div class="product-card__quick-view">
+                  <a class="view-button" href="#">
+                    <div class="view-button__img-container">
+                      <img class="view-button__icon" src="img/view-icon.avif"
+                        alt="black eye">
+                    </div>
+                  </a>
+                </div>
+                <div class="product-card__image-container">
+                  <img class="product-card__img" src="img/product-3.avif"
+                    alt="product picture">
+                </div>
+                <h3 class="product-card__name">Green Capsicum</h3>
+                <p class="product-card__price">$14.99</p>
+                <div class="product-card__rating">
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star "
+                      src="img/star-icon-gray.webp" alt="Star">
+                  </div>
+                  <div class="product-card__bag">
+                    <a class="bag-button" href="#">
+                      <div class="bag-button__img-container">
+                        <img class="bag-button__icon"
+                          src="img/bag-icon-green.avif"
+                          alt="white bag in green circle">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-promo-list__item product-card product-card--4x">
+                <div class="product-card__image-container">
+                  <img class="product-card__img" src="img/product-4.avif"
+                    alt="product picture">
+                </div>
+                <h3 class="product-card__name">Green Capsicum</h3>
+                <p class="product-card__price price">$14.99</p>
+                <div class="product-card__rating">
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star product-card__star--filled"
+                      src="img/star-icon-filled.webp" alt="Star">
+                  </div>
+                  <div class="product-card__star-container">
+                    <img class="product-card__star "
+                      src="img/star-icon-gray.webp" alt="Star">
+                  </div>
+                </div>
+                <div class="product-card__bag">
+                  <a class="bag-button" href="#">
+                    <div class="bag-button__img-container">
+                      <img class="bag-button__icon" src="img/bag-icon.webp"
+                        alt="white bag in green circle">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-top-shop">
+          <div class="section-top-shop__container">
+            <!-- section header -->
+            <div class="section-top-shop__header header-section">
+              <h2 class="header-section__title heading-03">Shop by Top
+                Categories</h2>
+              <div class="header-section__view-all view-all">
+                <a class="view-all__link">View All</a>
+                <!-- стрілочка буде псевдоелементом або background -->
+              </div>
+            </div>
+            <div class="section-top-shop__list top-categories">
+              <div class="section-top-shop__arrow-button arrow-button">
+                <img class="arrow-button__links" src="img/arrow-links.svg"
+                  alt="arrow-links">
+              </div>
+              <div class="top-categories__item categorie-card">
+                <div class="categorie-card__img-container">
+                  <img class="categorie-card__img" src="img/categorie-1.svg"
+                    alt="some image">
+                </div>
+                <h3 class="categorie-card__name">Vegetables</h3>
+                <p class="categorie-card__count">165 Products</p>
+              </div>
+              <div class="top-categories__item categorie-card">
+                <div class="categorie-card__img-container">
+                  <img class="categorie-card__img" src="img/categorie-2.svg"
+                    alt="some image">
+                </div>
+                <h3 class="categorie-card__name">Fresh Fruit</h3>
+                <p class="categorie-card__count">137 Products</p>
+              </div>
+              <div class="top-categories__item categorie-card">
+                <div class="categorie-card__img-container">
+                  <img class="categorie-card__img" src="img/categorie-3.svg"
+                    alt="some image">
+                </div>
+                <h3 class="categorie-card__name">Fish</h3>
+                <p class="categorie-card__count">34 Products</p>
+              </div>
+              <div class="top-categories__item categorie-card">
+                <div class="categorie-card__img-container">
+                  <img class="categorie-card__img" src="img/categorie-4.svg"
+                    alt="some image">
+                </div>
+                <h3 class="categorie-card__name">Meat</h3>
+                <p class="categorie-card__count">165 Products</p>
+              </div>
+              <div class="top-categories__item categorie-card">
+                <div class="categorie-card__img-container">
+                  <img class="categorie-card__img" src="img/categorie-5.svg"
+                    alt="some image">
+                </div>
+                <h3 class="categorie-card__name">Water and Drinks</h3>
+                <p class="categorie-card__count">48 Products</p>
+              </div>
+              <div class="top-categories__item categorie-card">
+                <div class="categorie-card__img-container">
+                  <img class="categorie-card__img" src="img/categorie-6.svg"
+                    alt="some image">
+                </div>
+                <h3 class="categorie-card__name">Snacks</h3>
+                <p class="categorie-card__count">165 Products</p>
+              </div>
+              <div class="section-top-shop__arrow-button arrow-button">
+                <img class="arrow-button__right" src="img/arrow-right.svg"
+                  alt="arrow-right">
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <p>
+            -------------------------------------------------------------------------------
+          </p>
+          <p class="footer__title">
+            Тут має бути футер
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
