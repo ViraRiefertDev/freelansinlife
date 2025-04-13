@@ -41,3 +41,10 @@ body {
 }
 
 
+.secton-intro__img-container--small{
+  max-width: 276px;
+}
+
+.secton-intro__img-container--big{
+  max-width: 444px;
+}
