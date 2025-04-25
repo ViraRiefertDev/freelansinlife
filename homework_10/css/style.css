@@ -1,0 +1,474 @@
+/* Скидання стилів */
+@import url('fonts.css');
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Adamina:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+
+body {
+  font-size: 15px;
+}
+
+.footer{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  padding-left:15px;
+  padding-right: 15px;
+  max-width: 1510px;
+}
+
+/* Practice Header */
+.header{
+  position: sticky;
+  top:0;
+  left:0;
+  z-index: 5;
+}
+.menu {
+  font-family: "Adamina";
+  background-color: #473186;
+  font-size: 0;
+  border-radius: 0 0 20px 20px;
+  color:white;
+}
+
+.menu__item {
+  position: relative;
+  display:inline-block;
+  z-index: 90;
+}
+
+.menu__item:hover{
+  background-color: #a571d0;
+}
+
+.menu__item:first-child:hover{
+  border-end-start-radius: 20px;
+}
+
+.menu__item:has(.menu__sub-menu)::after{
+content:"sd";
+position: absolute;
+top:45%;
+left:85%;
+width:10px;
+height: 15px;
+border-top:15px solid white;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+}
+
+.menu__item:hover .menu__sub-menu{
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__link {
+  padding:20px 40px;
+  font-size: 30px;
+}
+
+.menu__sub-menu {
+  position: absolute;
+  top:100%;
+  left:0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sub-menu {
+  background-color: #350f52;
+}
+
+.sub-menu__item {
+  position: relative;
+  padding:10px 40px 10px;
+}
+
+
+.sub-menu__item:hover{
+  background-color: #5b2089;
+}
+
+.sub-menu__item:hover .sub-menu__sub-sub-menu{
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu__item:not(:last-child){
+  padding-bottom: 15px;
+}
+
+.sub-menu__item:has(.sub-menu__sub-sub-menu)::after{
+  content:"sd";
+  position: absolute;
+  top:30%;
+  left:90%;
+  width:10px;
+  height: 15px;
+  border-left:15px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  }
+
+.sub-menu__link {
+  font-size: 25px;
+}
+
+.sub-menu__sub-sub-menu {
+  position: absolute;
+  left: 100%;
+  top:0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sub-sub-menu {
+  background-color: #46394f;
+}
+
+.sub-sub-menu__item {
+  padding:15px 40px;
+}
+
+.sub-sub-menu__item:hover{
+  background-color: #715c80;
+}
+
+.sub-sub-menu-link {
+  font-size: 20px;
+}
+
+/* section product-card*/
+
+
+.section-product-card {
+  margin-top: 50px;
+  font-family: "Poppins",sans-serif;
+}
+
+.section-product-card__content {
+  position: relative;
+  max-width: 264px;
+  width: 100%;
+  border: 1px solid #E6E6E6;
+}
+
+.section-product-card__content:hover{
+  border: 1px solid #2C742F;
+  box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+}
+
+.section-product-card__content > div:not(:last-child):not(:first-child){
+  margin-bottom: 12px;
+}
+
+.section-product-card__action-buttons {
+  cursor: pointer;
+  position: absolute;
+  right:16px;
+  top:16px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.section-product-card__content:hover .section-product-card__action-buttons{
+  visibility: visible;
+  opacity: 1;
+}
+.action-buttons > .action-button:not(:last-child) {
+  margin-bottom: 6px;
+}
+.action-buttons__button {
+  max-width: 40px;
+}
+.action-button {
+  width: 100%;
+}
+.section-product-card__product-img-container {
+  max-width: 264px;
+  width: 100%;
+  padding: 5px;
+}
+
+.section-product-card__product-img-container>img{
+  width: 100%;
+}
+
+.product-info {
+  font-size: 0;
+  position: relative;
+  padding:0 12px 12px;;
+}
+
+.product-info__product-description, .product-info__action-buttons{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.product-info__product-description {
+  padding-right: 51px;
+  width: 100%;
+}
+.product-info__title {
+  font-size: 14px;
+  color: #2C742F;
+  line-height: 1.5;
+}
+.product-info__price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.product-info__action-buttons{
+  cursor: pointer;
+  width: 30px;
+}
+
+.product-info__action-button {
+  position: absolute;
+  /* top:50%; */
+  bottom:12px;
+  right:16px;
+  /* transform: translateY(-50%); */
+}
+
+.add-to-cart-btn{
+  max-width: 40px;
+}
+
+.add-to-cart-btn > img{
+  width: 100%;
+}
+
+/* Перший варіант ми при ховері скриваємо сіру іконку і показуємо зелену */
+.add-to-cart-btn--active{
+  visibility: hidden;
+  opacity: 0;
+}
+.section-product-card__content:hover .add-to-cart-btn{
+  visibility: hidden;
+  opacity: 0;
+}
+.section-product-card__content:hover .add-to-cart-btn--active{
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Другий варіант граємося з z-index щоб показати потрібну іконку
+  Але щоб працювало треба блоки в HTML add-to-cart-btn та add-to-cart-btn--active поміняти місцями
+  і ще картинка з зеленим фоном трішки більша тому вилазить як бордер 
+  тому вибрала перший варіант */
+
+/* .add-to-cart-btn{
+  z-index: 2;
+}
+
+.add-to-cart-btn:hover{
+  z-index: 1;
+}
+
+.add-to-cart-btn--active:hover{
+  z-index:3;
+} */
+
+/* section risk-reimagined*/
+
+
+[class $= "__img-container"]{
+  position: relative;
+  z-index: 2;
+  border-radius: 20px;
+  overflow: clip;
+  box-shadow: -25px 20px 44px 0px rgba(84, 48, 209, 0.40);
+  max-width: 430px;
+  width: 100%;
+}
+
+[class $= "__img-container"] > img{
+  width: 100%;
+}
+
+.product-overview__img-container--z-index{
+  position: relative;
+  z-index: 4;
+}
+
+.product-overview__img-container--img-shadow{
+  position: absolute;
+  top:44px;
+  left: -17px;
+  z-index: 3;
+}
+
+.product-overview__img-container--shadow{
+  box-shadow: 22px 42px 44px 0px rgba(0, 0, 0, 0.30);
+}
+
+.section-risk-reimagined {
+  min-height: 600px;
+  margin:125px 0 125px;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.section-risk-reimagined--figure{
+  position: relative;
+  background-color: #5a54f2;
+}
+
+.section-risk-reimagined--figure::before,
+.section-risk-reimagined--figure::after{
+  content: "";
+  position: absolute;
+  left:-5%;
+  width: 110%;
+  height: 55px;
+}
+
+.section-risk-reimagined--figure::before{
+  top:-2%;
+  border-radius: 0% 0% 60% 60%/0% 0% 100% 100%;
+  background-color: #fff;
+}
+
+.section-risk-reimagined--figure::after{
+  bottom:-2%;
+  border-radius: 50% 50% 0% 0%/100% 100% 0% 0%;
+  background-color: #231f8b;
+}
+
+.section-risk-reimagined__content {
+  padding:0 125px;
+}
+
+.section-risk-reimagined__content > div:not(:last-child){
+margin-bottom: 15px;
+}
+
+.section-risk-reimagined__grc-highlight{
+  position: relative;
+  top:-41px;
+  left:0px;
+}
+
+.section-risk-reimagined__grc-highlight::before{
+  position: absolute;
+  z-index: 1;
+  top: 174px;
+  left: -132px;
+  content: "";
+  width: 421px;
+  height: 722px;
+  background: url(../img/little-circle.svg) 0 0  no-repeat, url(../img/big-circle.svg) 31px 29px no-repeat, url(../img/points-img1.svg) 44px 239px no-repeat;
+}
+
+.section-risk-reimagined__platform-overview{
+  position: relative;
+}
+.section-risk-reimagined__platform-overview::before{
+  position: absolute;
+  z-index: 3;
+  top: -48px;
+  right: 275px;
+  content: "";
+  width: 65px;
+  height: 65px;
+  background: url(../img/little-circle.svg) 0 0  no-repeat;
+}
+.section-risk-reimagined__platform-overview::after{
+  position: absolute;
+  z-index: 1;
+  top: -23px;
+  right: -296px;
+  content: "";
+  width: 421px;
+  height: 722px;
+  background: url(../img/middle-circle.svg) 0 0  no-repeat, url(../img/points-img2.svg) -164px 216px no-repeat;
+}
+
+
+.product-overview {
+  font-size: 0px;
+}
+
+.product-overview > div{
+  display: inline-block;
+  vertical-align: bottom;
+}
+.product-overview > div:not(:last-child) {
+  margin-right: 70px;
+}
+
+.product-overview--small{
+  padding-left: 224px;
+}
+
+.product-overview--small > div{
+  vertical-align: top;
+}
+
+.product-overview--small .product-overview__content-block{
+  padding-top: 30px;
+  max-width: 506px;
+}
+
+
+.content-block {
+  padding-bottom: 52px;
+  max-width: 602px;
+  color:white;
+}
+
+.content-block__title {
+  font-family: "CircularStd", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.28;
+  margin-bottom: 13px;
+}
+
+.content-block__text {
+  max-width: 480px;
+  font-size: 18px;
+  line-height: 1.67;
+  margin-bottom:39px;
+}
+
+.content-block__text>p:not(:last-child){
+  margin-bottom: 13px;
+}
+
+.button {
+  max-width: 256px;
+  padding:22px 26px 21px;
+  background-color: #F35B09;
+  border-radius: 60px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.17;
+}
+
+.button:hover{
+  background-color: #cb4b06;
+}
+
+.platform-overview>div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
