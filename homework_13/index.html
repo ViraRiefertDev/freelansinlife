@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
+              <ul class="menu__sub-menu sub-menu">
+                <li class="sub-menu__item">
+                  <a class="sub-menu__link" href="#">Team</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a class="sub-menu__link" href="#">History</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Services</a>
+              <ul class="menu__sub-menu sub-menu">
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Design</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Development</a>
+                  <ul class="sub-menu__sub-sub-menu sub-sub-menu">
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu-link">Frontend</a>
+                    </li>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu-link">Backend</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Marketing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="page">
+        <div class="section-practice">
+          <div class="section-practice__container">
+            <div class="section-practice__content">
+              <div class="carusel">
+                <div class="flex">
+                  <div class="flex__item">display:flex</div>
+                  <div class="flex__item">flex-basis</div>
+                  <div class="flex__item">flex-shrink</div>
+                  <div class="flex__item">justify-content</div>
+                  <div class="flex__item">align-items</div>
+                  <div class="flex__item">align-self</div>
+                  <div class="flex__item">gap</div>
+
+                  <div class="flex__item">display:flex</div>
+                  <div class="flex__item">flex-basis</div>
+                  <div class="flex__item">flex-shrink</div>
+                  <div class="flex__item">justify-content</div>
+                  <div class="flex__item">align-items</div>
+                  <div class="flex__item">align-self</div>
+                  <div class="flex__item">gap</div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faculty-section">
+          <div class="faculty-section__container">
+            <div class="faculty-section__inner">
+              <h2 class="title-section">Meet our
+                <br><strong>Professional Faculty </strong> </h2>
+              <ul class="faculty-section__cards">
+                <li class="card">
+                  <div class="card__image">
+                    <img src="img/expert_1.avif" alt="Image">
+                  </div>
+                  <h3 class="card__title">Albert Flores</h3>
+                  <p class="card__description">Founder of FeatherDev Academy
+                    Masters in Finance | University of New York </p>
+                  <a class="card__read-more" href="#">Read more</a>
+                </li>
+                <li class="faculty-section__card card">
+                  <div class="card__image">
+                    <img src="img/expert_2.avif" alt="Image">
+                  </div>
+                  <h3 class="card__title">Arlene McCoy</h3>
+                  <p class="card__description">15 Year + Experience in
+                    Teaching and Former RBI Grade B Employee. Have Qualified
+                    USMLE Mains twice and is just like a knowledge book of
+                    Economics.</p>
+                  <a class="card__read-more" href="#">Read more</a>
+                </li>
+                <li class="faculty-section__card card">
+                  <div class="card__image">
+                    <img src="img/expert_3.avif" alt="Image">
+                  </div>
+                  <h3 class="card__title">Annette Black</h3>
+                  <p class="card__description">10 Year + Experience in
+                    Teaching and Former Civil Servant. Specialized in teaching
+                    History and no student wants to miss their class.</p>
+                  <a class="card__read-more" href="#">Read more</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="faculty-in-ca-section">
+          <div class="faculty-in-ca-section__container">
+            <div class="faculty-in-ca-section__inner">
+              <div class="faculty-in-ca-section__content">
+                <h2 class="title-section title-section--dark">Best Faculty from
+                  New
+                  York is <br><strong>Now Available in California!</strong></h2>
+                <p class="faculty-in-ca-section__description">Our Faculty is
+                  common in all the branches which helps us to maintain the
+                  quality education across India. Now there is no need to go
+                  anywhere!</p>
+                <ul class="faculty-in-ca-section__list">
+                  <li class="faculty-in-ca-section__list-item">
+                    Learn from Top Educators in your city
+                  </li>
+                  <li class="faculty-in-ca-section__list-item">
+                    Regular Classes & Doubt Solving 300+
+                  </li>
+                  <li class="faculty-in-ca-section__list-item">
+                    Selections in 2022-2023 Batch
+                  </li>
+                </ul>
+              </div>
+              <div class="faculty-in-ca-section__image">
+                <img src="img/image_1.avif" alt="Image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="achievement-section">
+          <div class="achievement-section__container">
+            <div class="achievement-section__inner">
+              <h2 class="title-section title-section--small">FeatherDev Academy
+                is the <strong>Best USMLE/Civil Services Coaching in
+                  California</strong></h2>
+              <ul class="achievement-section__list">
+                <li class="achievement-item">
+                  <div class="achievement-item__img">
+                    <img src="img/icon_1.svg" alt="Icon">
+                  </div>
+                  <div class="achievement-item__content-wrapper">
+                    <p class="achievement-item__number">2000+</p>
+                    <p class="achievement-item__desc">Selection</p>
+                  </div>
+                </li>
+                <li class="achievement-item">
+                  <div class="achievement-item__img">
+                    <img src="img/icon_2.svg" alt="Icon">
+                  </div>
+                  <div class="achievement-item__content-wrapper">
+                    <p class="achievement-item__number">10 Years +</p>
+                    <p class="achievement-item__desc">Experience faculty</p>
+                  </div>
+                </li>
+                <li class="achievement-item">
+                  <div class="achievement-item__img">
+                    <img src="img/icon_3.svg" alt="Icon">
+                  </div>
+                  <div class="achievement-item__content-wrapper">
+                    <p class="achievement-item__number">10+</p>
+                    <p class="achievement-item__desc">Entrance Courses</p>
+                  </div>
+                </li>
+                <li class="achievement-item">
+                  <div class="achievement-item__img">
+                    <img src="img/icon_4.svg" alt="Icon">
+                  </div>
+                  <div class="achievement-item__content-wrapper">
+                    <p class="achievement-item__number">100+</p>
+                    <p class="achievement-item__desc">Entrance Books</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <p>
+            -------------------------------------------------------------------------------
+          </p>
+          <p class="footer__title">Тут має бути футер</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

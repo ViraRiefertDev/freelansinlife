@@ -1,0 +1,395 @@
+/* Скидання стилів */
+@import url('fonts.css');
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-size: 15px;
+  font-family: "Inter" ,sans-serif;
+}
+
+.footer {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main{
+  flex-grow: 1;
+}
+
+[class*='__container'] {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1230px;
+}
+
+/* Practice Header */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.menu {
+  font-family: 'Adamina';
+  background-color: #473186;
+  font-size: 0;
+  border-radius: 0 0 20px 20px;
+  color: white;
+}
+
+.menu__item {
+  position: relative;
+  display: inline-block;
+  z-index: 90;
+}
+
+.menu__item:hover {
+  background-color: #a571d0;
+}
+
+.menu__item:first-child:hover {
+  border-end-start-radius: 20px;
+}
+
+.menu__item:has(.menu__sub-menu)::after {
+  content: 'sd';
+  position: absolute;
+  top: 45%;
+  left: 85%;
+  width: 10px;
+  height: 15px;
+  border-top: 15px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.menu__item:hover .menu__sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__link {
+  padding: 20px 40px;
+  font-size: 30px;
+}
+
+.menu__sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sub-menu {
+  background-color: #350f52;
+}
+
+.sub-menu__item {
+  position: relative;
+  padding: 10px 40px 10px;
+}
+
+.sub-menu__item:hover {
+  background-color: #5b2089;
+}
+
+.sub-menu__item:hover .sub-menu__sub-sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu__item:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+.sub-menu__item:has(.sub-menu__sub-sub-menu)::after {
+  content: 'sd';
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  width: 10px;
+  height: 15px;
+  border-left: 15px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.sub-menu__link {
+  font-size: 25px;
+}
+
+.sub-menu__sub-sub-menu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sub-sub-menu {
+  background-color: #46394f;
+}
+
+.sub-sub-menu__item {
+  padding: 15px 40px;
+}
+
+.sub-sub-menu__item:hover {
+  background-color: #715c80;
+}
+
+.sub-sub-menu-link {
+  font-size: 20px;
+}
+
+
+/* Section practice */
+.section-practice {
+  margin-bottom: 60px;
+  margin-top: 100px;
+}
+
+.section-practice__content {
+  background-color: rgb(245, 205, 212);
+  padding:20px 0;
+}
+
+.carusel {
+  overflow: hidden;
+}
+.flex {
+  display: flex;
+  width: 3020px;
+  gap: 30px;
+  animation: scroll 10s linear infinite;
+  justify-content: space-between;
+
+}
+
+.carusel:hover .flex {
+  animation-play-state: paused;
+}
+
+.flex__inner-flex{
+  display: flex;
+  
+}
+.flex__item {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform:translateX(-51%);
+  }
+}
+
+
+
+/* Section faculty */
+
+.title-section{
+  color: #fff;
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+.title-section  > strong{
+  font-weight: 700;
+}
+
+.faculty-section {
+  padding: 61px 0 102px;
+  background-color: #412672;
+}
+
+.faculty-section__inner{
+  display: flex;
+  flex-direction: column;
+  gap:31px;
+
+}
+
+.faculty-section__cards {
+  display: flex;
+  gap:20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+  background-color: #fff;
+  flex-basis: 387px;
+  gap:16px;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover{
+  background-color: #FFBE48;
+  box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+}
+
+.card__image > img{
+  height: 266px;
+}
+
+.card__title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.card__description {
+  flex-grow: 1;
+  line-height: 1.26;
+}
+.card__read-more {
+  position: relative;
+  color: #FE3F3F;
+  line-height: 1.26;
+  
+}
+
+.card__read-more::after{
+  content:'';
+  position: absolute;
+  bottom:0;
+  left:0;
+  height: 1px;
+  width: 0;
+  background-color: #FE3F3F;
+  transition: width 0.3s ease;
+}
+
+.card__read-more:hover::after {
+  width: 23%;
+}
+
+/* section faculty-in-ca-*/
+
+.faculty-in-ca-section {
+  padding: 55px 0 72px;
+}
+
+.faculty-in-ca-section__container{
+  
+  max-width: 1567px;
+
+}
+
+.faculty-in-ca-section__inner {
+  margin-left: 165px;
+  display: flex;
+  align-items: center;
+  gap:90px;
+}
+.faculty-in-ca-section__content {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  flex-basis: 518px;
+  flex-shrink: 0;
+}
+.title-section__dark{
+  color:#412672;
+  font-size: 34px;
+}
+.faculty-in-ca-section__description {
+  color:#412672;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.faculty-in-ca-section__list {
+  padding:18px 0 0px;
+  display: flex;
+  flex-direction: column;
+  gap:31px;
+
+}
+
+.faculty-in-ca-section__list-item {
+  display: inline-flex;
+  gap:15px;
+  align-items: center;
+  line-height: 1.2;
+  font-size: 20px;
+  color:#4F4F4F;
+}
+
+.faculty-in-ca-section__list-item::before{
+  content: "";
+  background: url(../img/check.svg) 0 0 / 100% no-repeat;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  align-self: flex-start;
+}
+
+.faculty-in-ca-section__image {
+  flex-grow: 1;
+}
+
+/* achievement-section */
+
+.achievement-section {
+  background-color: #412672;
+  padding: 70px 0;
+}
+
+.achievement-section__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.title-section--small {
+  font-size: 24px;
+
+}
+.title-section__list {
+  align-self: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  gap:30px;
+  justify-content: space-between;
+}
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+.achievement-item__img {
+  width: 80px;
+}
+
+.achievement-item__content-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  color: #fff;
+}
+.achievement-item__number {
+  font-size: 24px;
+  font-weight: 700;
+}
+.achievement-item__desc {
+  
+  line-height: 1.6;
+}
