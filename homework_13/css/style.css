@@ -305,7 +305,7 @@ body {
   flex-basis: 518px;
   flex-shrink: 0;
 }
-.title-section__dark{
+.title-section--dark{
   color:#412672;
   font-size: 34px;
 }
@@ -362,7 +362,7 @@ body {
   font-size: 24px;
 
 }
-.title-section__list {
+.achievement-section__list {
   align-self: stretch;
   display: flex;
   flex-wrap: wrap;
