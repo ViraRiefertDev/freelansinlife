@@ -287,32 +287,26 @@ body {
 
 .faculty-in-ca-section {
   padding: 55px 0 72px;
-}
-
-.faculty-in-ca-section__container{
-  
-  max-width: 1567px;
-
-}
-
-.faculty-in-ca-section__inner {
-  margin-left: 165px;
   display: flex;
   align-items: center;
   gap:20px;
-  justify-content: space-between;
 }
+
 .faculty-in-ca-section__content {
   display: flex;
   flex-direction: column;
-  gap:20px;
-  flex-basis: 518px;
+  
+  flex:0 0 100%;
+}
+
+.faculty-in-ca-section__body{
+  width: 45%;
 }
 .title-section--dark{
   color:#412672;
   font-size: 34px;
 }
-.faculty-in-ca-section__content > p {
+.faculty-in-ca-section__body > p {
   color:#412672;
   font-size: 22px;
   line-height: 1.2;
@@ -343,7 +337,9 @@ body {
 }
 
 .faculty-in-ca-section__image {
-  flex-basis: 764px;
+  /* flex-basis: 764px; */
+  flex:0 0 50%;
+  transform: translate(-100%, 0px);
 }
 
 /* achievement-section */
