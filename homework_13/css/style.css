@@ -204,6 +204,8 @@ body {
 /* Section faculty */
 
 .title-section{
+  display: flex;
+  flex-direction: column;
   color: #fff;
   font-size: 38px;
   line-height: 1.2;
@@ -218,16 +220,17 @@ body {
   background-color: #412672;
 }
 
-.faculty-section__inner{
-  display: flex;
-  flex-direction: column;
-  gap:31px;
+
+
+.faculty-section__title{
+  margin-bottom:31px;
 
 }
 
 .faculty-section__cards {
   display: flex;
   gap:20px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -235,7 +238,7 @@ body {
   flex-direction: column;
   padding:20px;
   background-color: #fff;
-  flex-basis: 387px;
+  flex-basis: 386px;
   gap:16px;
   transition: background-color 0.3s ease;
 }
@@ -254,7 +257,7 @@ body {
   font-weight: 600;
   line-height: 1.2;
 }
-.card__description {
+.card > p {
   flex-grow: 1;
   line-height: 1.26;
 }
@@ -296,20 +299,20 @@ body {
   margin-left: 165px;
   display: flex;
   align-items: center;
-  gap:90px;
+  gap:20px;
+  justify-content: space-between;
 }
 .faculty-in-ca-section__content {
   display: flex;
   flex-direction: column;
   gap:20px;
   flex-basis: 518px;
-  flex-shrink: 0;
 }
 .title-section--dark{
   color:#412672;
   font-size: 34px;
 }
-.faculty-in-ca-section__description {
+.faculty-in-ca-section__content > p {
   color:#412672;
   font-size: 22px;
   line-height: 1.2;
@@ -319,7 +322,6 @@ body {
   display: flex;
   flex-direction: column;
   gap:31px;
-
 }
 
 .faculty-in-ca-section__list-item {
@@ -341,7 +343,7 @@ body {
 }
 
 .faculty-in-ca-section__image {
-  flex-grow: 1;
+  flex-basis: 764px;
 }
 
 /* achievement-section */
@@ -359,6 +361,7 @@ body {
 }
 
 .title-section--small {
+  display:block;
   font-size: 24px;
 
 }
