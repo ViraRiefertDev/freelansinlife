@@ -351,10 +351,15 @@ body {
 }
 
 .achievement-section__inner {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 25px; */
+}
+
+.achievement-section__title{
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .title-section--small {
