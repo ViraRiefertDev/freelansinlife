@@ -335,8 +335,8 @@ body {
   content: "";
   background: url(../img/check.svg) 0 0 / 100% no-repeat;
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   align-self: flex-start;
 }
 
