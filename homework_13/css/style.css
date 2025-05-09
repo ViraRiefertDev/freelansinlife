@@ -278,7 +278,7 @@ body {
 }
 
 .card__read-more:hover::after {
-  width: 23%;
+  width: 100%;
 }
 
 /* section faculty-in-ca-*/
