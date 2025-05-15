@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
+              <ul class="menu__sub-menu sub-menu">
+                <li class="sub-menu__item">
+                  <a class="sub-menu__link" href="#">Team</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a class="sub-menu__link" href="#">History</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Services</a>
+              <ul class="menu__sub-menu sub-menu">
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Design</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Development</a>
+                  <ul class="sub-menu__sub-sub-menu sub-sub-menu">
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu-link">Frontend</a>
+                    </li>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu-link">Backend</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Marketing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="page">
+        <div class="section-practice">
+          <div class="section-practice__container">
+            <div class="section-practice__content"></div>
+          </div>
+        </div>
+
+        <div class="checkout-section">
+          <div class="checkout-section__container">
+            <div class="checkout-section__inner">
+              <form class="form-container" action="#">
+                <div class="form-container__left-part">
+                  <div class="billing-info-section">
+                    <h2 class="billing-info-section__title">Billing Information</h2>
+                    <div class="billing-info-section__content">
+                      <div class="three-column-group">
+                        <div class="three-column-group__input-block input-block">
+                          <label for="first-name">First name</label>
+                          <input id="first-name" type="text"
+                            placeholder="Your first name">
+                        </div>
+                        <div class="three-column-group__input-block input-block">
+                          <label for="last-name">Last name</label>
+                          <input id="last-name" type="text"
+                            placeholder="Your last name">
+                        </div>
+                        <div class="three-column-group__input-block input-block">
+                          <label for="company-name">Company name
+                            <span>(optional)</span></label>
+                          <input id="company-name" type="text"
+                            placeholder="Company name">
+                        </div>
+                      </div>
+                      <div class="one-column-group">
+                        <div class="one-column-group__input-block input-block">
+                          <label for="street-adress">First name</label>
+                          <input id="street-adress" type="text"
+                            placeholder="Your street adress">
+                        </div>
+                      </div>
+                      <div class="three-column-group">
+                        <div class="three-column-group__input-block input-block">
+                          <label for="county-region">Country/Region</label>
+                          <select name="country/region" id="county-region">
+                            <option selected disabled>Select</option>
+                            <option value="ukraine">Ukraine</option>
+                            <option value="germany">Germany</option>
+                            <option value="kasahstan">Kasahstan</option>
+                            <option value="poland">Poland</option>
+                          </select>
+                        </div>
+                        <div class="three-column-group__input-block input-block">
+                          <label for="states">States</label>
+                          <select required name="states" id="states">
+                            <option selected disabled hidden>Select</option>
+                            <option value="ukraine">Kyiv</option>
+                            <option value="ukraine">Donetsk</option>
+                            <option value="germany">Berlin</option>
+                            <option value="germany">Cologne</option>
+                            <option value="kasahstan">Astana</option>
+                            <option value="kasahstan">Karaganda</option>
+                            <option value="poland">Warsaw</option>
+                            <option value="poland">Krakov</option>
+                          </select>
+                        </div>
+                        <div class="three-column-group__input-block input-block">
+                          <label for="zip-code">Zip code</label>
+                          <input id="company-name" type="text"
+                            placeholder="Zip Code">
+                        </div>
+                      </div>
+                      <div class="two-column-group">
+                        <div class="email-block">
+                          <label for="email">Email</label>
+                          <input id="email" type="email"
+                            placeholder="Email Address">
+                        </div>
+                        <div class="phone-block">
+                          <label for="phone">Phone</label>
+                          <input id="phone" type="tel" placeholder="Phone number">
+                        </div>
+                      </div>
+                      <div class="shipping-toggle-block">
+                        <input id="shipping" type="text">
+                        <label for="shipping">Ship to a different address</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="additional-info-section"></div>
+                </div>
+                <div class="form-container__right-part">Right part</div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <p>
+            -------------------------------------------------------------------------------
+          </p>
+          <p class="footer__title">Тут має бути футер</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
