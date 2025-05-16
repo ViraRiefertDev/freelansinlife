@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Flexbox</title>
+    <title>Form</title>
   </head>
   <body>
     <div class="wrapper">
@@ -66,48 +66,85 @@
               <form class="form-container" action="#">
                 <div class="form-container__left-part">
                   <div class="billing-info-section">
-                    <h2 class="billing-info-section__title">Billing Information</h2>
-                    <div class="billing-info-section__content">
+                    <h2 class="block-title block-title--margin-20">
+                      Billing Information
+                    </h2>
+                    <div class="billing-info-section__inputs">
                       <div class="three-column-group">
-                        <div class="three-column-group__input-block input-block">
-                          <label for="first-name">First name</label>
-                          <input id="first-name" type="text"
+                        <div
+                          class="three-column-group__input-block input-block">
+                          <label class="label" for="first-name">First
+                            name</label>
+                          <input
+                            required
+                            class="text-input"
+                            id="first-name"
+                            type="text"
                             placeholder="Your first name">
                         </div>
-                        <div class="three-column-group__input-block input-block">
-                          <label for="last-name">Last name</label>
-                          <input id="last-name" type="text"
+                        <div
+                          class="three-column-group__input-block input-block">
+                          <label class="label" for="last-name">Last name</label>
+                          <input
+                            required
+                            class="text-input"
+                            id="last-name"
+                            type="text"
                             placeholder="Your last name">
                         </div>
-                        <div class="three-column-group__input-block input-block">
-                          <label for="company-name">Company name
+                        <div
+                          class="three-column-group__input-block input-block">
+                          <label class="label" for="company-name">Company name
                             <span>(optional)</span></label>
-                          <input id="company-name" type="text"
+                          <input
+                            class="text-input"
+                            id="company-name"
+                            type="text"
                             placeholder="Company name">
                         </div>
                       </div>
                       <div class="one-column-group">
                         <div class="one-column-group__input-block input-block">
-                          <label for="street-adress">First name</label>
-                          <input id="street-adress" type="text"
+                          <label class="label" for="street-adress">Street
+                            Address</label>
+                          <input
+                            required
+                            class="text-input"
+                            id="street-adress"
+                            type="text"
                             placeholder="Your street adress">
                         </div>
                       </div>
                       <div class="three-column-group">
-                        <div class="three-column-group__input-block input-block">
-                          <label for="county-region">Country/Region</label>
-                          <select name="country/region" id="county-region">
-                            <option selected disabled>Select</option>
+                        <div
+                          class="three-column-group__input-block input-block input-block--with-arrow">
+                          <label class="label"
+                            for="county-region">Country/Region</label>
+                          <select
+                            class="select-input"
+                            required
+                            name="country/region"
+                            id="county-region">
+                            <option value selected disabled hidden>
+                              Select
+                            </option>
                             <option value="ukraine">Ukraine</option>
                             <option value="germany">Germany</option>
                             <option value="kasahstan">Kasahstan</option>
                             <option value="poland">Poland</option>
                           </select>
                         </div>
-                        <div class="three-column-group__input-block input-block">
-                          <label for="states">States</label>
-                          <select required name="states" id="states">
-                            <option selected disabled hidden>Select</option>
+                        <div
+                          class="three-column-group__input-block input-block input-block--with-arrow">
+                          <label class="label" for="states">States</label>
+                          <select
+                            class="select-input"
+                            required
+                            name="states"
+                            id="states">
+                            <option value selected disabled hidden>
+                              Select
+                            </option>
                             <option value="ukraine">Kyiv</option>
                             <option value="ukraine">Donetsk</option>
                             <option value="germany">Berlin</option>
@@ -118,37 +155,152 @@
                             <option value="poland">Krakov</option>
                           </select>
                         </div>
-                        <div class="three-column-group__input-block input-block">
-                          <label for="zip-code">Zip code</label>
-                          <input id="company-name" type="text"
+                        <div
+                          class="three-column-group__input-block input-block">
+                          <label class="label" for="zip-code">Zip code</label>
+                          <input
+                            required
+                            class="text-input"
+                            id="zip-code"
+                            type="text"
                             placeholder="Zip Code">
                         </div>
                       </div>
                       <div class="two-column-group">
-                        <div class="email-block">
-                          <label for="email">Email</label>
-                          <input id="email" type="email"
+                        <div class="two-column-group__input-block input-block">
+                          <label class="label" for="email">Email</label>
+                          <input
+                            required
+                            class="text-input"
+                            id="email"
+                            type="email"
                             placeholder="Email Address">
                         </div>
-                        <div class="phone-block">
-                          <label for="phone">Phone</label>
-                          <input id="phone" type="tel" placeholder="Phone number">
+                        <div class="two-column-group__input-block input-block">
+                          <label class="label" for="phone">Phone</label>
+                          <input
+                            required
+                            class="text-input"
+                            id="phone"
+                            type="tel"
+                            placeholder="Phone number">
                         </div>
                       </div>
-                      <div class="shipping-toggle-block">
-                        <input id="shipping" type="text">
-                        <label for="shipping">Ship to a different address</label>
+                    </div>
+                    <div class="shipping-toggle-block">
+                      <label class="checkbox-label" for="shipping">
+                        <input
+                          class="checkbox-input"
+                          id="shipping"
+                          type="checkbox">
+                        <span class="span">Ship to a different address</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="additional-info-section">
+                    <h2 class="block-title block-title--margin">
+                      Additional Info
+                    </h2>
+                    <div class="one-column-group">
+                      <div
+                        class="one-column-group__input-block input-block input-block--text-area">
+                        <label class="label" for="street-adress">Order Notes
+                          <span>(Optional)</span></label>
+                        <textarea
+                          class="text-input"
+                          placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
                       </div>
                     </div>
                   </div>
-                  <div class="additional-info-section"></div>
                 </div>
-                <div class="form-container__right-part">Right part</div>
+                <div class="form-container__right-part">
+                  <h2 class="block-title block-title--margin-16">
+                    Order Summery
+                  </h2>
+                  <div class="order-summery">
+                    <div class="order-summery__products-list">
+                      <div class="product-summary">
+                        <div class="product-summary__description">
+                          <div class="product-summary__img">
+                            <img src="img/product-1.webp" alt="image">
+                          </div>
+                          <p class="product-summary__title">Green Capsicum</p>
+                          <p class="product-summary__amount">x5</p>
+                        </div>
+                        <p class="product-summary__price">$70.00</p>
+                      </div>
+                      <div class="product-summary">
+                        <div class="product-summary__description">
+                          <div class="product-summary__img">
+                            <img src="img/product-2.webp" alt="image">
+                          </div>
+                          <p class="product-summary__title">Red Capsicum</p>
+                          <p class="product-summary__amount">x1</p>
+                        </div>
+                        <p class="product-summary__price">$70.00</p>
+                      </div>
+                    </div>
+                    <div class="pricing-summary">
+                      <div class="pricing-summary__item">
+                        <p class="pricing-summary__text">Subtotal:</p>
+                        <p class="pricing-summary__price">$84.00</p>
+                      </div>
+                      <div class="pricing-summary__item">
+                        <p class="pricing-summary__text">Shipping:</p>
+                        <p class="pricing-summary__price">Free</p>
+                      </div>
+                      <div class="pricing-summary__item">
+                        <p class="pricing-summary__text">Total:</p>
+                        <p class="pricing-summary__price">$84.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h2 class="block-title block-title--margin-16">
+                    Payment Method
+                  </h2>
+                  <div class="payment-method">
+                    <div class="payment-method__list">
+                      <div class="payment-method__item">
+                        <label class="radio-button">
+                          <input
+                            class="radio-button__input"
+                            name="pay-method"
+                            checked
+                            value="cash"
+                            type="radio">
+                          <span class="radio-button__label">Cash on
+                            Delivery</span>
+                        </label>
+                      </div>
+                      <div class="payment-method__item">
+                        <label class="radio-button">
+                          <input
+                            class="radio-button__input"
+                            name="pay-method"
+                            value="paypal"
+                            type="radio">
+                          <span class="radio-button__label">Paypal</span>
+                        </label>
+                      </div>
+                      <div class="payment-method__item">
+                        <label class="radio-button">
+                          <input
+                            disabled
+                            class="radio-button__input"
+                            name="pay-method"
+                            value="amazon-pay"
+                            type="radio">
+                          <span class="radio-button__label">Amazon Pay</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn" type="submit">Place Order</button>
+                </div>
               </form>
             </div>
           </div>
         </div>
-
       </main>
 
       <footer class="footer">
