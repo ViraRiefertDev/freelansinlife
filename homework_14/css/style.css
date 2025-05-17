@@ -331,12 +331,20 @@ body {
   align-items: center;
   gap:10px;
 }
-.product-summary__description {
+.product-summary__link {
   display: flex;
   align-items: center;
   gap:6px;
-  
 }
+
+.product-summary__link p {
+   transition: font-weight, 0.2s ease;
+}
+
+.product-summary__link:hover p{
+  font-weight: 600;
+}
+
 .product-summary__img {
   width: 60px;
   height: 60px;
