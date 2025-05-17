@@ -331,17 +331,22 @@ body {
   align-items: center;
   gap:10px;
 }
-.product-summary__link {
+.product-summary__description {
   display: flex;
   align-items: center;
   gap:6px;
 }
 
-.product-summary__link p {
-   transition: font-weight, 0.2s ease;
+.product-summary__link{
+  display: flex;
+  align-items: center;
+  gap:6px;
+}
+.product-summary__title {
+  transition: font-weight, 0.2s ease;
 }
 
-.product-summary__link:hover p{
+.product-summary__link:hover .product-summary__title{
   font-weight: 600;
 }
 
