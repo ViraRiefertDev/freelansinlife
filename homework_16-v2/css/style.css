@@ -278,14 +278,12 @@ body {
 }
 
 /* Page */
-.page {
-}
 .section-hero {
   background: url('../img/banner-hero.avif') center/cover no-repeat;
   padding: 144px 0 141px;
 }
 .section-hero__container {
-  max-width: 1056;
+  max-width: 1056px;
 }
 .section-hero__inner {
   display: flex;
