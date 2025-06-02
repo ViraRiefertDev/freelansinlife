@@ -1,0 +1,339 @@
+/* Скидання стилів */
+@import url('fonts.css');
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Carme:wght@400&display=swap');
+
+body {
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer, .header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class$='__container'] {
+  /* max-width: 1230px; */
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Blossomia */
+
+.blossomia-section {
+  font-family:"KoPubBatang", serif;
+  line-height: 1.1;
+  background-color:#F8F3EC;
+  margin-top:50px;
+  padding-top: 34px;
+  padding-bottom:30px;
+}
+
+.blossomia-section__container {
+  max-width: 1230px;
+}
+
+.blossomia-section__content {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+}
+
+.blossomia-section__title {
+  position: relative;
+  color:#2C2C2C;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.flavor-card{
+  width: 100%;
+  height: 100%;
+}
+
+.flavor-card__img {
+  aspect-ratio: 439 / 378; 
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.flavor-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.flavor-card__content {
+  display: flex;
+  justify-content: space-between;
+  gap:10px;
+  padding-right: 6px;
+}
+
+.flavor-card__title {
+  color:#2C2C2C;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.flavor-card__price {
+  color:#4E4E4E;
+  font-family:"Carme" ,sans-serif;
+  font-size: 18px;
+}
+
+.flavor-card__action-buttons {
+  align-self: flex-start;
+  display: flex;
+  gap:20px;
+}
+
+.flavor-card__action-btn {
+  background-color:#F8F3EC;
+  width: 22px;
+}
+
+.more-btn {
+  font-family: "KoPubBatang", serif;
+  padding: 10px 15px 11px 13px;
+  background-color:#F8F3EC;
+  border: 1px solid #DBCCDA;
+}
+
+.more-btn__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 9px 60px 9px 60px;
+  font-size: 17px;
+  line-height: 1.377;
+  background-color: #DBCCBA;
+  color: #2C2C2C;
+}
+
+.more-btn__inner::after{
+  content: '';
+  background: url('../img/icons/arrow.svg') right / 24px no-repeat;
+  width: 24px;
+  height: 14px;
+} 
+
+@media(min-width: 452px){
+  .flavor-card__title {
+    font-size: 24px;
+  }
+
+  .flavor-card__price {
+    font-size: 22px;
+  }
+
+  .flavor-card__action-btn {
+      width: 26px;
+  }
+}
+
+
+
+@media(min-width: 483px){
+  .blossomia-section__content {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      column-gap: 20px;    
+  }
+
+  .blossomia-section__title, .more-btn {
+      grid-column: span 2;
+  }
+
+  .flavor-card__title {
+    font-size: 17px;
+  }
+
+  .flavor-card__price {
+    font-size: 20px;
+  }
+
+  .flavor-card__action-btn {
+      width: 20px;
+  }
+
+  .flavor-card__action-buttons {
+    flex-direction: column;
+    gap:8px;
+  }
+}
+@media(min-width: 773px){
+  .flavor-card__title {
+    font-size: 24px;
+  }
+
+  .flavor-card__price {
+    font-size: 22px;
+  }
+
+  .flavor-card__action-btn {
+      width: 26px;
+  }
+
+  .flavor-card__action-buttons {
+    flex-direction: row;
+    gap:20px;
+  }
+
+  .more-btn {
+    justify-self: center;
+    width: 500px;
+    font-family: "KoPubBatang", serif;
+    padding: 10px 15px 11px 13px;
+    background-color:#F8F3EC;
+    border: 1px solid #DBCCDA;
+  }
+
+  .more-btn__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 9px 60px 9px 60px;
+    font-size: 17px;
+    line-height: 1.377;
+    background-color: #DBCCBA;
+    color: #2C2C2C;
+  }
+}
+
+@media(min-width: 1173px){
+  .blossomia-section {
+  margin-top:90px;
+  padding-top:100px;
+  margin-bottom:100px;  
+  }
+
+  .flavor-card{
+    padding-bottom: 0px;
+  }
+
+  .flavor-card__body{
+    transition: all 0.3s ease;
+  }
+
+  .flavor-card__body:hover{
+  box-shadow: 20px 0px 20px #DBCCBA;
+  }
+
+  .blossomia-section__content{
+    grid-template-columns: 0.351fr 0.3245fr 0.3245fr;
+    grid-auto-rows: 231px 282px;
+    column-gap: 30px;
+    row-gap: 0;
+  }
+
+  .blossomia-section__title {
+  align-self: center;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  font-size: 60px;
+  }
+
+  .flavor-card:nth-child(3n+2){
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: span 2;
+    margin-top: -57.7%;
+  }
+
+  .flavor-card__img {
+  aspect-ratio: 369 / 378; 
+  }
+
+  .blossomia-section__title {
+    padding: 52px 0;
+    align-self: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 60px;
+    font-weight: 300;
+  }
+  
+  .flavor-card:nth-child(3n+2) .flavor-card__img {
+    aspect-ratio: 400 / 427;
+  }
+  
+  .flavor-card__title {
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  }
+
+  .flavor-card__title::after{
+    position: absolute;
+    content:'';
+    bottom:-5px;
+    left:0;
+    width: 0%;
+    height: 1px;
+    background-color:#DBCCBA;
+    transition: width 0.3s ease;
+  }
+  
+  .flavor-card__title::after{
+    position: absolute;
+    content:'';
+    bottom:-5px;
+    left:0;
+    width: 0%;
+    height: 1px;
+    background-color:#DBCCBA;
+    transition: width 0.3s ease;
+  }
+
+  .flavor-card__title:hover::after{
+    width: 100%;
+  }
+
+  .flavor-card__price {
+    font-size: 18px;
+  }
+
+  .flavor-card__action-btn {
+    cursor: pointer;
+  }
+
+  .more-btn{
+    width: auto;
+    position: absolute;
+    bottom:131px;
+    left: 0;
+    margin-top: -300px;
+    padding:10px 10px 11px 9px;
+    transition:  background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .more-btn:hover{
+    background-color: #DBCCBA;
+  }
+
+  .more-btn__inner{
+    padding: 9px 30px;
+  }
+}
+
