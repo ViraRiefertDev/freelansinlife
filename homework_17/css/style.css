@@ -2,338 +2,470 @@
 @import url('fonts.css');
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Carme:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body {
-  font-size: 13px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.footer, .header {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
 }
 
 .wrapper {
-  overflow: clip;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: clip;
 }
 
-.wrapper > main {
+.page {
   flex-grow: 1;
 }
 
 [class$='__container'] {
-  /* max-width: 1230px; */
+  max-width: 1350px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding:0 15px;
 }
 
-/* Blossomia */
-
-.blossomia-section {
-  font-family:"KoPubBatang", serif;
-  line-height: 1.1;
-  background-color:#F8F3EC;
-  margin-top:50px;
-  padding-top: 34px;
-  padding-bottom:30px;
-}
-
-.blossomia-section__container {
-  max-width: 1230px;
-}
-
-.blossomia-section__content {
-    display: grid;
-    position: relative;
-    grid-template-columns: 1fr;
-    row-gap: 50px;
-}
-
-.blossomia-section__title {
-  position: relative;
-  color:#2C2C2C;
+.footer, .header {
+  text-align: center;
+  padding: 20px 0;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 800;
+  background-color: lightgreen;
 }
 
-.flavor-card{
-  width: 100%;
-  height: 100%;
+/* ========================================= */
+.page {
+  padding:60px 0;
 }
 
-.flavor-card__img {
-  aspect-ratio: 439 / 378; 
-  width: 100%;
-  margin-bottom: 16px;
+.page__task-1:not(:last-child) {
+  margin-bottom: 60px;
 }
 
-.flavor-card__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+.ecobazar-task__best-seller-top:not(:last-child), 
+.ecobazar-task__best-seller-bottom:not(:last-child){
+  margin-bottom: 26px;
 }
 
-.flavor-card__content {
-  display: flex;
-  justify-content: space-between;
-  gap:10px;
-  padding-right: 6px;
-}
-
-.flavor-card__title {
-  color:#2C2C2C;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.flavor-card__price {
-  color:#4E4E4E;
-  font-family:"Carme" ,sans-serif;
-  font-size: 18px;
-}
-
-.flavor-card__action-buttons {
-  align-self: flex-start;
-  display: flex;
-  gap:20px;
-}
-
-.flavor-card__action-btn {
-  background-color:#F8F3EC;
-  width: 22px;
-}
-
-.more-btn {
-  font-family: "KoPubBatang", serif;
-  padding: 10px 15px 11px 13px;
-  background-color:#F8F3EC;
-  border: 1px solid #DBCCDA;
-}
-
-.more-btn__inner {
+/* ========================================= */
+/* ====Ecobazar======= */
+/* ========================================= */
+/* components */
+.section-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 9px 60px 9px 60px;
-  font-size: 17px;
-  line-height: 1.377;
-  background-color: #DBCCBA;
-  color: #2C2C2C;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.more-btn__inner::after{
-  content: '';
-  background: url('../img/icons/arrow.svg') right / 24px no-repeat;
-  width: 24px;
-  height: 14px;
-} 
-
-@media(min-width: 452px){
-  .flavor-card__title {
-    font-size: 24px;
-  }
-
-  .flavor-card__price {
-    font-size: 22px;
-  }
-
-  .flavor-card__action-btn {
-      width: 26px;
-  }
+.section-header__caregory{
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.28px;
+  line-height: 1;
+  color: #00B207;
 }
 
-
-
-@media(min-width: 483px){
-  .blossomia-section__content {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      column-gap: 20px;    
-  }
-
-  .blossomia-section__title, .more-btn {
-      grid-column: span 2;
-  }
-
-  .flavor-card__title {
-    font-size: 17px;
-  }
-
-  .flavor-card__price {
-    font-size: 20px;
-  }
-
-  .flavor-card__action-btn {
-      width: 20px;
-  }
-
-  .flavor-card__action-buttons {
-    flex-direction: column;
-    gap:8px;
-  }
-}
-@media(min-width: 773px){
-  .flavor-card__title {
-    font-size: 24px;
-  }
-
-  .flavor-card__price {
-    font-size: 22px;
-  }
-
-  .flavor-card__action-btn {
-      width: 26px;
-  }
-
-  .flavor-card__action-buttons {
-    flex-direction: row;
-    gap:20px;
-  }
-
-  .more-btn {
-    justify-self: center;
-    width: 500px;
-    font-family: "KoPubBatang", serif;
-    padding: 10px 15px 11px 13px;
-    background-color:#F8F3EC;
-    border: 1px solid #DBCCDA;
-  }
-
-  .more-btn__inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 9px 60px 9px 60px;
-    font-size: 17px;
-    line-height: 1.377;
-    background-color: #DBCCBA;
-    color: #2C2C2C;
-  }
+.section-header__title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
-@media(min-width: 1173px){
-  .blossomia-section {
-  margin-top:90px;
-  padding-top:100px;
-  margin-bottom:100px;  
-  }
+.sale-bunner-title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-  .flavor-card{
-    padding-bottom: 0px;
-  }
+.sale-bunner-desc {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+}
 
-  .flavor-card__body{
-    transition: all 0.3s ease;
-  }
+.sale-bunner-desc--green {
+  color:#00B207;
+}
+.sale-bunner-desc span{
+  font-weight: 600;
+}
 
-  .flavor-card__body:hover{
-  box-shadow: 20px 0px 20px #DBCCBA;
-  }
-
-  .blossomia-section__content{
-    grid-template-columns: 0.351fr 0.3245fr 0.3245fr;
-    grid-auto-rows: 231px 282px;
-    column-gap: 30px;
-    row-gap: 0;
-  }
-
-  .blossomia-section__title {
-  align-self: center;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  font-size: 60px;
-  }
-
-  .flavor-card:nth-child(3n+2){
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: span 2;
-    margin-top: -57.7%;
-  }
-
-  .flavor-card__img {
-  aspect-ratio: 369 / 378; 
-  }
-
-  .blossomia-section__title {
-    padding: 52px 0;
-    align-self: center;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    font-size: 60px;
-    font-weight: 300;
-  }
-  
-  .flavor-card:nth-child(3n+2) .flavor-card__img {
-    aspect-ratio: 400 / 427;
-  }
-  
-  .flavor-card__title {
-  position: relative;
-  font-size: 20px;
-  margin-bottom: 14px;
+.button-w-arrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding:14px 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #00B207;
+  background: #fff;
+  border-radius: 43px;
   cursor: pointer;
+}
+
+.button-w-arrow::after{
+  content: '';
+  width: 15px;
+  height: 12px;
+  background: url('../img/ecobazar/icons/arrow-right.svg') center / contain no-repeat;
+}
+
+.goods__title{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@keyframes shake {
+  25% {
+    transform: translateY(0) translateX(0);
   }
 
-  .flavor-card__title::after{
-    position: absolute;
-    content:'';
-    bottom:-5px;
-    left:0;
-    width: 0%;
-    height: 1px;
-    background-color:#DBCCBA;
-    transition: width 0.3s ease;
-  }
-  
-  .flavor-card__title::after{
-    position: absolute;
-    content:'';
-    bottom:-5px;
-    left:0;
-    width: 0%;
-    height: 1px;
-    background-color:#DBCCBA;
-    transition: width 0.3s ease;
+  50% {
+    transform: translateY(0) translateX(-5px);
   }
 
-  .flavor-card__title:hover::after{
-    width: 100%;
-  }
-
-  .flavor-card__price {
-    font-size: 18px;
-  }
-
-  .flavor-card__action-btn {
-    cursor: pointer;
-  }
-
-  .more-btn{
-    width: auto;
-    position: absolute;
-    bottom:131px;
-    left: 0;
-    margin-top: -300px;
-    padding:10px 10px 11px 9px;
-    transition:  background-color 0.3s ease;
-    cursor: pointer;
-  }
-
-  .more-btn:hover{
-    background-color: #DBCCBA;
-  }
-
-  .more-btn__inner{
-    padding: 9px 30px;
+  75% {
+    transform: translateY(0) translateX(5px);
   }
 }
 
+/*======================================================*/
+/* ! Bunner */
+/*======================================================*/
+
+.sale-bunner{
+  position: relative;
+}
+.sale-bunner__img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 248 / 339;
+}
+
+.sale-bunner__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sale-bunner__content {
+  padding: 24px 10px;
+  position: absolute;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:16px;
+  width: 100%;
+}
+.goods .sale-bunner__content {
+  padding-top:32px;
+  gap:20px;
+}
+.sale-bunner__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.goods .sale-bunner__info{
+  gap:12px;
+}
+
+
+/*======================================================*/
+/* ! product card */
+/*======================================================*/
+.product-card {
+  position: relative;
+  height: 100%;
+  border: 1px solid #E6E6E6;
+  background-color: #fff;
+}
+
+/* !бордер з тінню для карток при hover */
+.product-card::before{
+  content:'';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  z-index: 1;
+  border:1px solid #2c742f;
+
+  box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product-card__image {
+  width: 100%;
+  padding:1px 1px 0px 1px;
+  aspect-ratio: 1/1;
+}
+.product-card__image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.product-card__content {
+  min-width: 208px;
+  position: relative;
+  padding: 12px 16px 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:10px;
+  flex-grow: 0;
+}
+.product-card__info{
+  display: flex;
+  flex-direction: column;
+  gap:6px;
+  flex-grow: 1;
+}
+.product-card__title {
+  color:#4D4D4D; 
+}
+
+.product-card__title a {
+  transition: color 0.3s ease-in-out;
+}
+
+.product-card__price {
+  font-size: 16px;
+  font-weight: 500;
+}
+.product-card__rating {
+  max-width: 60px;
+  aspect-ratio: 60/12;
+}
+
+.product-card__rating img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.product-card__button {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  padding:10px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition:
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+}
+.goods .product-card__button {
+  width: 30px;
+  height: 30px;
+  padding:0;
+}
+
+.product-card__actions {
+  position: absolute;
+  top:16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap:6px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+.goods .product-card__actions {
+  flex-direction: row;
+  z-index: 1;
+  top:50%;
+  right: 6%;
+}
+
+.product-card--goods{
+  display: flex;
+}
+
+.goods .product-card__image{
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+
+/*==============================================================================================================*/
+/* sections */
+/*==============================================================================================================*/
+.ecobazar-task__header {
+  max-width: 621px;
+  margin:0 auto 32px;
+  text-align: center;
+}
+
+.best-seller-top__cards {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(216px, 100%), 1fr));
+  gap:20px;
+}
+
+.goods{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(312px, 100%), 1fr));
+  gap:24px;
+}
+
+.goods__column{
+  display: grid;
+  row-gap: 16px;
+}
+
+/*======================================================*/
+/* ! ховери в медіазапиті */
+/*======================================================*/
+@media (any-hover: hover), (pointer: fine){
+  .product-card:hover::before {
+    opacity: 1;
+  }
+
+  .product-card:hover .product-card__actions {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .goods .product-card__actions {
+    padding:10px 0 10px;
+    top:39%;
+    left:3%;
+    right:auto;
+    background-color: #fff;
+}
+
+  .product-card:hover .product-card__button--add-to-cart {
+    color: #ffffff;
+    background-color: #00b207;
+  }
+
+    .product-card__button:hover{
+    color: #fff;
+    background-color: #00b207;
+  }
+
+  .product-card__button.product-card__button--add-to-cart:hover {
+    background-color: #2c742f;
+  }
+
+  .goods .product-card:hover .product-card__title{
+    color:#00B207;
+  }
+
+  .button-w-arrow:hover::after{
+    animation: shake 0.8s ease-in-out infinite;
+  }
+}
+
+@media (any-hover: none), (pointer: coarse) {
+  .product-card__actions {
+    opacity: 1;
+    visibility: visible;
+  }
+  .product-card .product-card__button--add-to-cart {
+    color: #ffffff;
+    background-color: #00b207;
+  }
+}
+
+
+/*======================================================*/
+/* ! max-width */
+
+@media (max-width: 460px) {
+  .section-header__title {
+  font-size: 28px;
+  }
+  .sale-bunner__content {
+    padding: 54px 10px;
+    gap:22px;
+  }
+  .sale-bunner__info {
+    gap: 12px;
+  }
+  .sale-card-title {
+    font-size: 16px;
+  }
+  .sale-bunner-desc {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 720px) {
+  .best-seller-top__cards{
+    gap:0;
+  }
+}
+
+
+.ecobazar-task__best-seller-bottom {
+}
+.goods {
+}
+.goods__column {
+}
+.goods__title {
+}
+.goods__item {
+}
+.product-card {
+}
+.product-card--goods {
+}
+.product-card__image {
+}
+.product-card__content {
+}
+.product-card__info {
+}
+.product-card__title-price {
+}
+.product-card__title {
+}
+.product-card__price {
+}
+.product-card__rating {
+}
+.product-card__actions {
+}
+.product-card__button {
+}
+.product-card__button--add-to-cart {
+}
+.sale-bunner {
+}
+.sale-bunner__img {
+}
+.sale-bunner__content {
+}
+.sale-bunner__info {
+}
+.sale-bunner-title {
+}
+.sale-bunner-desc {
+}
+.button-w-arrow {
+}
