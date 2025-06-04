@@ -1,0 +1,27 @@
+.section{
+  max-width: 500px;
+  margin:0 auto;
+  overflow: hidden;
+  background-color: #794f45;
+}
+.items{
+  margin-left: -5px;
+  margin-right: -5px;
+  font-size:0;
+}
+.item{
+  width: 33.333%;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-left:5px;
+  padding-right: 5px;
+  vertical-align: top;
+
+}
+
+.content{
+  font-size: 18px;
+  background: #7a956b;
+  text-align: center;
+  padding:25px;
+}

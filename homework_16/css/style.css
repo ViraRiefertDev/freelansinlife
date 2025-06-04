@@ -37,11 +37,11 @@ body.menu-open {
 }
 
 .header {
+  position: sticky;
+  top:0;
+  left:0;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(113.6500015258789px);
-  position: absolute;
-  top: 0;
-  left: 0;
   padding: 28px 0 25px;
   width: 100%;
 }
@@ -210,8 +210,8 @@ body.menu-open {
   }
   .menu {
     position: absolute;
-    opacity: 0;
-    visibility: hidden;
+ /*    opacity: 0;
+    visibility: hidden; */
   }
   .menu__body {
     position: fixed;
@@ -251,10 +251,10 @@ body.menu-open {
   .menu__link {
     font-size: 24px;
   }
-  .menu-open .menu {
+/*   .menu-open .menu {
     opacity: 1;
     visibility: visible;
-  }
+  } */
   .menu-open .menu__body {
     transform: translateY(0);
     opacity: 1;

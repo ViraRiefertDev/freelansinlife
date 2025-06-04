@@ -1,0 +1,83 @@
+/* Скидання стилів */
+@import url('fonts.css');
+@import url('reset.css');
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap");
+
+
+
+body{
+  font-family: "Inter" ,sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+
+.header,.footer, h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1230px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+
+.section-best-faculty {
+  
+}
+
+.text-section{
+  margin: 153px 59px 139px 0;
+  max-width: 528px;
+  padding-right: 10px;
+  color: #412672;
+}
+
+.text-section>*:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.text-section>h3{
+  font-size: 34px;
+  line-height: 1.206;
+}
+
+.text-section>p{
+  font-size: 22px;
+  line-height: 1.227;
+}
+
+.text-section>ul{
+  padding: 13px 0;
+}
+
+.text-section>ul>li{
+  padding-left: 44px;
+  color:#4F4F4F;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+
+
+.text-section>ul>li:not(:last-child){
+  margin-bottom: 21px;
+}
+
+.text-section>ul>li:before{
+  vertical-align: bottom;
+  content: '';
+  background: url(../img/check.svg) center/29px no-repeat;
+  width: 29px;
+  height: 29px;
+  margin-right: 15px;
+  margin-left: -44px;
+}
+
+
