@@ -659,6 +659,7 @@ body {
   aspect-ratio: 439 / 378; 
   width: 100%;
   margin-bottom: 16px;
+  background-color: #d3d3d3;
 }
 
 .flavor-card__img img {
